@@ -12,7 +12,7 @@ services:
             - "3306:3306"
 
     php:
-        build: ./docker/php/7.2/
+        build: ./docker/php/7.4/
         volumes:
             - ./docker/php/app.ini:/usr/local/etc/php/conf.d/docker-php-ext-app.ini:ro
             - ./docker/logs/app:/var/www/app/var/log:cached
